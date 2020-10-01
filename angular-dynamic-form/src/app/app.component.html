@@ -2,9 +2,8 @@
 
 <label for="ingredients">Ingredients</label>
 <ng-container *ngFor="let ingredient of form.get('ingredients')['controls']; let i = index" >
-  //passing our ingredient iteratee as our formgroup here
   <div [formGroup]="ingredient" class="row">
-  //don't you forget about me!
+
     <div class="form-group col-sm">
       <label for="name">Name</label>
       <input class="form-control" formControlName="name" aria-describedby="name">
